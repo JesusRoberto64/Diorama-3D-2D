@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=3 uid="uid://ltc770byjbul"]
+
+[ext_resource type="PackedScene" uid="uid://c8wmg5otvvkl5" path="res://Recursos/Meshes/Kokiri_00/kokiri_forest.glb" id="1_8rjo2"]
+
+[node name="kokiri_forest" instance=ExtResource("1_8rjo2")]
+
+[node name="node-016DB57D" parent="." index="1"]
+visible = false
+
+[node name="node-00DB616B" parent="." index="2"]
+visible = false
+
+[node name="node-00B86B7C" parent="." index="5"]
+visible = false
+
+[node name="node-027BC75C" parent="." index="6"]
+visible = false
+
+[node name="node-025A023F" parent="." index="7"]
+visible = false
+
+[node name="node-012A143F" parent="." index="8"]
+visible = false
+
+[node name="node-027AB63C" parent="." index="9"]
+visible = false
+
+[node name="node-0250681F" parent="." index="10"]
+visible = false
+
+[node name="node-00D3A919" parent="." index="11"]
+visible = false
+
+[node name="node-0370F1E3" parent="." index="12"]
+visible = false
+
+[node name="node-02F880FE" parent="." index="13"]
+visible = false
+
+[node name="node-02BC88F4" parent="." index="14"]
+visible = false
+
+[node name="node-00A0D094" parent="." index="15"]
+visible = false
+
+[node name="node-01A75539" parent="." index="16"]
+visible = false
+
+[node name="node-02E1FF02" parent="." index="17"]
+visible = false
+
+[node name="node-01F1F71A" parent="." index="18"]
+visible = false
+
+[node name="node-0181AFF1" parent="." index="19"]
+visible = false
+
+[node name="node-018F2F81" parent="." index="20"]
+visible = false

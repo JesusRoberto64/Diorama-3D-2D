@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bwpm2akvb1x4w"
+path.s3tc="res://.godot/imported/kokiri_forest_01_s04_ha_01bx_800.png-925b3acf29eea7ab63006b0009715c8c.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "bf96be61df0484b93771d1d0472d9f30"
+}
+
+[deps]
+
+source_file="res://Recursos/Meshes/Kokiri_01/kokiri_forest_01_s04_ha_01bx_800.png"
+dest_files=["res://.godot/imported/kokiri_forest_01_s04_ha_01bx_800.png-925b3acf29eea7ab63006b0009715c8c.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

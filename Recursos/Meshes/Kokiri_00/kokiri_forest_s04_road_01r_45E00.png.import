@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bddqikh1l07nj"
+path.s3tc="res://.godot/imported/kokiri_forest_s04_road_01r_45E00.png-0321063fb7001f0692f41d2c770f5ff2.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "dfdf52108f81575a136bbcb73ee7fc36"
+}
+
+[deps]
+
+source_file="res://Recursos/Meshes/Kokiri_00/kokiri_forest_s04_road_01r_45E00.png"
+dest_files=["res://.godot/imported/kokiri_forest_s04_road_01r_45E00.png-0321063fb7001f0692f41d2c770f5ff2.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
