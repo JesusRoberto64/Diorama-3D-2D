@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://cng1jxfdc7jj3"]
+[gd_scene load_steps=56 format=3 uid="uid://cng1jxfdc7jj3"]
 
 [ext_resource type="Texture2D" uid="uid://bdmui7gvwfag7" path="res://Recursos/PlayStation - SaGa Frontier 2 - Gustave XIII.png" id="1_a5rb2"]
 [ext_resource type="Script" uid="uid://fo0is343w8k" path="res://Logica/player_3d.gd" id="2_rhdfu"]
@@ -366,9 +366,19 @@ sky_material = SubResource("ProceduralSkyMaterial_kl47q")
 [sub_resource type="Environment" id="Environment_sqaf8"]
 background_mode = 2
 sky = SubResource("Sky_45aoy")
+ssr_fade_in = 0.15
+ssao_power = 0.512265
 glow_intensity = 0.51
 glow_mix = 0.543
 glow_blend_mode = 0
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_qiy83"]
+dof_blur_far_enabled = true
+dof_blur_far_distance = 11.0
+dof_blur_far_transition = 8.0
+dof_blur_near_enabled = true
+dof_blur_near_distance = 3.0
+dof_blur_amount = 0.05
 
 [node name="main3d" type="Node3D"]
 
@@ -457,3 +467,4 @@ sky_mode = 1
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_sqaf8")
+camera_attributes = SubResource("CameraAttributesPractical_qiy83")

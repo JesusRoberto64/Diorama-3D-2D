@@ -526,31 +526,36 @@ process_material = SubResource("ParticleProcessMaterial_dsss3")
 draw_pass_1 = SubResource("QuadMesh_m5gme")
 
 [node name="flare" type="MeshInstance3D" parent="." index="26"]
-transform = Transform3D(0.113602, 0.998633, -0.420702, -0.278732, 0.499664, 0, 0.0542023, 0.476473, 0.881745, -3.17959, 1.94909, 7.82774)
+transform = Transform3D(0.113602, 0.998633, -0.420702, -0.278732, 0.499664, 0, 0.0542023, 0.476473, 0.881745, -3.89759, 1.94909, 10.0757)
+sorting_offset = 10.0
 mesh = SubResource("QuadMesh_3qyih")
 skeleton = NodePath("../mercos y plat")
 surface_material_override/0 = SubResource("ShaderMaterial_dsss3")
 
 [node name="flare2" type="MeshInstance3D" parent="." index="27"]
-transform = Transform3D(0.113602, 0.998633, -0.420702, -0.278732, 0.499664, 0, 0.0542023, 0.476473, 0.881745, -3.43941, 1.90869, 8.41467)
+transform = Transform3D(0.44975, 7.05639, -2.33312, -1.1035, 3.53065, 0, 0.214587, 3.36678, 4.88997, 2.19545, 2.62124, 8.41467)
+sorting_offset = 10.0
 mesh = SubResource("QuadMesh_3qyih")
 skeleton = NodePath("../mercos y plat")
 surface_material_override/0 = SubResource("ShaderMaterial_dsss3")
 
 [node name="flare3" type="MeshInstance3D" parent="." index="28"]
-transform = Transform3D(0.113602, 0.998633, -0.420702, -0.278732, 0.499664, 0, 0.0542023, 0.476473, 0.881745, -3.64492, 1.60225, 9.16675)
+transform = Transform3D(0.113602, 0.998633, -0.420702, -0.278732, 0.499664, 0, 0.0542023, 0.476473, 0.881745, -4.40668, 1.60225, 10.7633)
+sorting_offset = 10.0
 mesh = SubResource("QuadMesh_3qyih")
 skeleton = NodePath("../mercos y plat")
 surface_material_override/0 = SubResource("ShaderMaterial_dsss3")
 
 [node name="flare4" type="MeshInstance3D" parent="." index="29"]
-transform = Transform3D(0.113602, 0.998633, -0.420702, -0.278732, 0.499664, 0, 0.0542023, 0.476473, 0.881745, -4.05661, 1.45797, 10.5388)
+transform = Transform3D(0.321314, 5.38274, -2.56826, -0.788372, 2.69324, 0, 0.153307, 2.56824, 5.38278, -4.05661, 2.92426, 10.5388)
+sorting_offset = 10.0
 mesh = SubResource("QuadMesh_3qyih")
 skeleton = NodePath("../mercos y plat")
 surface_material_override/0 = SubResource("ShaderMaterial_dsss3")
 
 [node name="flare5" type="MeshInstance3D" parent="." index="30"]
-transform = Transform3D(0.243166, 2.67272, -0.253928, -0.602203, 1.15742, 0, 0.0654519, 0.719405, 0.943389, 2.2009, 0.484005, 0.629944)
+transform = Transform3D(0.347692, 7.4721, -0.0602955, -0.861063, 3.23579, 0, 0.0935867, 2.01123, 0.224009, 5.65847, 2.59831, 0.629944)
+sorting_offset = 10.0
 mesh = SubResource("QuadMesh_3qyih")
 skeleton = NodePath("../mercos y plat")
 surface_material_override/0 = SubResource("ShaderMaterial_dsss3")
