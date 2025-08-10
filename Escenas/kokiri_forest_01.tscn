@@ -348,6 +348,7 @@ shader_parameter/ray_1_strength = 4.3
 [node name="kokiri_forest_01" instance=ExtResource("1_gkdwx")]
 
 [node name="mercos y plat" parent="." index="0"]
+cast_shadow = 2
 surface_material_override/0 = SubResource("StandardMaterial3D_n374p")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="mercos y plat" index="0"]
@@ -394,6 +395,7 @@ shape = SubResource("ConcavePolygonShape3D_gxd8g")
 surface_material_override/0 = SubResource("StandardMaterial3D_41axb")
 
 [node name="paredes relleno" parent="." index="6"]
+cast_shadow = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_t7aq6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="paredes relleno" index="0"]
@@ -458,6 +460,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_etlew")
 surface_material_override/0 = SubResource("StandardMaterial3D_gspna")
 
 [node name="Puente" parent="." index="15"]
+cast_shadow = 2
 surface_material_override/0 = SubResource("StandardMaterial3D_e01ow")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Puente" index="0"]
