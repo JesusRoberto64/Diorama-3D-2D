@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://cng1jxfdc7jj3"]
+[gd_scene load_steps=59 format=3 uid="uid://cng1jxfdc7jj3"]
 
 [ext_resource type="Script" uid="uid://fo0is343w8k" path="res://Logica/player_3d.gd" id="2_rhdfu"]
 [ext_resource type="Script" uid="uid://cygwh6u36ua4" path="res://Logica/cam_ancher.gd" id="3_qiy83"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://ll5s68ocdch1" path="res://Recursos/Sprites/hansel_sheet.png" id="5_kl47q"]
 [ext_resource type="CameraAttributesPractical" uid="uid://b2y8bep3wyk0r" path="res://Recursos/camera_atributes.tres" id="6_45aoy"]
 [ext_resource type="PackedScene" uid="uid://ciy81ek51eore" path="res://Escenas/kokiri_forest_01.tscn" id="6_kl47q"]
+[ext_resource type="Script" uid="uid://td3wrvwahd6" path="res://Logica/character_render.gd" id="6_y8mmr"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qiy83"]
 radius = 0.174116
@@ -357,6 +358,8 @@ alpha_antialiasing_mode = 0
 distance_fade_mode = 1
 distance_fade_max_distance = 25.0
 
+[sub_resource type="World3D" id="World3D_45aoy"]
+
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kl47q"]
 sky_energy_multiplier = 7.4
 ground_curve = 0.04
@@ -427,6 +430,7 @@ cast_shadow = 0
 mesh = SubResource("QuadMesh_y8mmr")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_y8mmr")
+script = ExtResource("6_y8mmr")
 
 [node name="fore_shadow" type="Sprite3D" parent="Player3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
@@ -464,8 +468,17 @@ cull_mask = 1048567
 [node name="kokiri_forest_01" parent="." instance=ExtResource("6_kl47q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.285789, 0.0169206, -0.271752)
 
+[node name="ShadowViewport" type="SubViewport" parent="."]
+world_3d = SubResource("World3D_45aoy")
+positional_shadow_atlas_size = 1024
+
+[node name="Camera3D" type="Camera3D" parent="ShadowViewport"]
+transform = Transform3D(0.248233, -0.219327, 0.943544, 3.72529e-09, 0.974031, 0.226413, -0.9687, -0.0562033, 0.241787, 16.9993, 6.56116, 2.33611)
+cull_mask = 1047560
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.774696, -0.165547, 0.610278, 0.604545, 0.0890587, 0.791578, -0.185394, 0.982173, 0.0310868, 5.62471, 3.83172, -0.578666)
+layers = 9
 shadow_enabled = true
 sky_mode = 1
 

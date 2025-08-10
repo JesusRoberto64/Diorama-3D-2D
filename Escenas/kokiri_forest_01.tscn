@@ -35,7 +35,7 @@
 [ext_resource type="Texture2D" uid="uid://7mbwkuj0u54v" path="res://Recursos/Meshes/Kokiri_01/displasment_cascade.png" id="28_reo4a"]
 [ext_resource type="Shader" uid="uid://b2qxv5c4d3xpa" path="res://Recursos/Shaders/waterfall_shore.gdshader" id="30_ee57x"]
 [ext_resource type="Texture2D" uid="uid://tx8lf1yiujs2" path="res://Recursos/Meshes/Kokiri_01/espora_00.png" id="34_3qyih"]
-[ext_resource type="Shader" uid="uid://cjosk5ix4rbe3" path="res://Escenas/flare.gdshader" id="34_51iq5"]
+[ext_resource type="Shader" uid="uid://cjosk5ix4rbe3" path="res://Recursos/Shaders/flare.gdshader" id="34_51iq5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n374p"]
 albedo_texture = ExtResource("2_e01ow")
@@ -348,6 +348,7 @@ shader_parameter/ray_1_strength = 4.3
 [node name="kokiri_forest_01" instance=ExtResource("1_gkdwx")]
 
 [node name="mercos y plat" parent="." index="0"]
+layers = 9
 cast_shadow = 2
 surface_material_override/0 = SubResource("StandardMaterial3D_n374p")
 
@@ -359,6 +360,7 @@ collision_layer = 3
 shape = SubResource("ConcavePolygonShape3D_e01ow")
 
 [node name="nose" parent="." index="1"]
+layers = 9
 surface_material_override/0 = SubResource("ShaderMaterial_ruhhn")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="nose" index="0"]
@@ -368,10 +370,12 @@ visible = false
 shape = SubResource("ConcavePolygonShape3D_ruhhn")
 
 [node name="ramas sueltas" parent="." index="2"]
+layers = 9
 material_override = SubResource("ShaderMaterial_m5gme")
 surface_material_override/0 = SubResource("StandardMaterial3D_48kml")
 
 [node name="pasto" parent="." index="3"]
+layers = 9
 surface_material_override/0 = SubResource("StandardMaterial3D_1bwrr")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="pasto" index="0"]
@@ -382,6 +386,7 @@ collision_layer = 3
 shape = SubResource("ConcavePolygonShape3D_vw5la")
 
 [node name="oirlla rio tierra" parent="." index="4"]
+layers = 9
 surface_material_override/0 = SubResource("StandardMaterial3D_yvm0s")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="oirlla rio tierra" index="0"]
@@ -392,9 +397,11 @@ collision_layer = 3
 shape = SubResource("ConcavePolygonShape3D_gxd8g")
 
 [node name="escalera" parent="." index="5"]
+layers = 9
 surface_material_override/0 = SubResource("StandardMaterial3D_41axb")
 
 [node name="paredes relleno" parent="." index="6"]
+layers = 9
 cast_shadow = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_t7aq6")
 
@@ -405,6 +412,7 @@ visible = false
 shape = SubResource("ConcavePolygonShape3D_reo4a")
 
 [node name="casas" parent="." index="7"]
+layers = 9
 surface_material_override/0 = SubResource("StandardMaterial3D_xnhja")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="casas" index="0"]
@@ -415,16 +423,19 @@ collision_layer = 3
 shape = SubResource("ConcavePolygonShape3D_gqxa4")
 
 [node name="arbustos" parent="." index="8"]
+layers = 9
 sorting_offset = 17.0
 material_override = SubResource("ShaderMaterial_w7str")
 surface_material_override/0 = SubResource("StandardMaterial3D_na4tp")
 
 [node name="arbustos_001" parent="." index="9"]
+layers = 9
 sorting_offset = 18.0
 material_override = SubResource("ShaderMaterial_v0boc")
 surface_material_override/0 = SubResource("StandardMaterial3D_j1kbv")
 
 [node name="camino" parent="." index="10"]
+layers = 9
 sorting_offset = 100.0
 surface_material_override/0 = SubResource("StandardMaterial3D_wri47")
 
@@ -435,6 +446,7 @@ visible = false
 shape = SubResource("ConcavePolygonShape3D_n374p")
 
 [node name="techos" parent="." index="11"]
+layers = 9
 surface_material_override/0 = SubResource("StandardMaterial3D_b0aer")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="techos" index="0"]
@@ -445,6 +457,7 @@ collision_layer = 3
 shape = SubResource("ConcavePolygonShape3D_l1wbl")
 
 [node name="Barrotes" parent="." index="12"]
+layers = 9
 surface_material_override/0 = SubResource("StandardMaterial3D_lvtce")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Barrotes" index="0"]
@@ -454,12 +467,15 @@ visible = false
 shape = SubResource("ConcavePolygonShape3D_mxolo")
 
 [node name="holas arboles" parent="." index="13"]
+layers = 9
 surface_material_override/0 = SubResource("StandardMaterial3D_etlew")
 
 [node name="arboles hori" parent="." index="14"]
+layers = 9
 surface_material_override/0 = SubResource("StandardMaterial3D_gspna")
 
 [node name="Puente" parent="." index="15"]
+layers = 9
 cast_shadow = 2
 surface_material_override/0 = SubResource("StandardMaterial3D_e01ow")
 
@@ -471,17 +487,21 @@ collision_layer = 3
 shape = SubResource("ConcavePolygonShape3D_xqt5h")
 
 [node name="nose 2" parent="." index="16"]
+layers = 9
 surface_material_override/0 = SubResource("StandardMaterial3D_mxolo")
 
 [node name="hojas techo" parent="." index="17"]
+layers = 9
 surface_material_override/0 = SubResource("StandardMaterial3D_xqt5h")
 
 [node name="agua rio" parent="." index="18"]
 transform = Transform3D(0.01, 0, 0, 0, -3.57628e-09, -0.01, 0, 0.01, -3.57628e-09, 0, 3.30765, 1.18291e-06)
 visible = false
+layers = 9
 surface_material_override/0 = SubResource("StandardMaterial3D_gxd8g")
 
 [node name="orilla de rio" parent="." index="19"]
+layers = 9
 surface_material_override/0 = SubResource("ShaderMaterial_gxd8g")
 
 [node name="aguaShader" type="MeshInstance3D" parent="." index="20"]
