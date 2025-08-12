@@ -5,5 +5,6 @@ dof_blur_far_enabled = true
 dof_blur_far_distance = 11.0
 dof_blur_far_transition = 8.0
 dof_blur_near_enabled = true
-dof_blur_near_distance = 3.0
+dof_blur_near_distance = 3.25
+dof_blur_near_transition = 2.0
 dof_blur_amount = 0.05
