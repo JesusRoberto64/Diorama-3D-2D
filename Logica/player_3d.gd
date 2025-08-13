@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-var accel = Vector2.ZERO
+var accel : Vector2 = Vector2.ZERO
 @export_range(0.0, 250.0) var speed = 20.0
 @export var MAX_ACCEL = 7.0
 @export var releace_time = 0.25
@@ -26,9 +26,6 @@ func _process(delta: float) -> void:
 		var decel_amout = (MAX_ACCEL / releace_time) * delta
 		accel = accel.move_toward(Vector2.ZERO, decel_amout)
 	
-	
-	
-	#position += Vector3(accel.x, 0.0, accel.y)
 	velocity = Vector3(accel.x, 0.0, accel.y)
 	
 	if not is_on_floor():
